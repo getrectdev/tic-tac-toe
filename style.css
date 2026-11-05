@@ -1,0 +1,36 @@
+.grid {
+  display: grid;
+}
+
+#board {
+  width: 512px;
+  height: 512px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+.board-cell {
+  all: unset;
+  cursor: pointer;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 132px;
+}
+
+#cell4 {
+  border: 1px solid black;
+}
+
+#cell1,
+#cell7 {
+  border-right: 1px solid black;
+  border-left: 1px solid black;
+}
+
+#cell3,
+#cell5 {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}

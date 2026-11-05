@@ -1,0 +1,54 @@
+Tic-tac-toe in HTML
+
+Game States
+    LOAD
+        Create game elements
+            Game
+                Players
+                    Human
+
+                    AI
+                Gameboard
+                    board = [0,0,0,
+                             0,0,0,
+                             0,0,0]
+                    0 empty
+                    +1 p1
+                    -1 p2
+                Scoreboard
+                Current player
+    
+    SPLASH
+        Pick 1p or 2p
+        Set number of games
+            1, best of 3, 5
+
+    PLAY
+        Flip to decide who goes first, set current player
+        Main Loop
+            Get current player move
+            Display to screen
+            Check for round win
+                + display winner
+                + update Scoreboard
+                + check for game win 
+                    - play again, quit?
+                    + change to GO state 
+                - change current player
+                - loop
+
+    GO 
+        Display winner
+        play again?
+            + change state to LOAD
+            - Display Goodbye!
+
+Color palette
+    School Palette by kurlicue
+    https://www.color-hex.com/color-palette/10720
+        #f3f3b5
+        #d8e4d4
+        #ffb793
+        #66cdaa
+        #66cccc
+
